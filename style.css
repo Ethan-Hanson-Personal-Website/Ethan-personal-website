@@ -1,0 +1,46 @@
+html{
+    background: green;
+}
+
+header{
+    font-size: 2rem;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: .5em 1em;
+    box-shadow: 0 2px 6px 1px black;
+}
+
+main{
+    min-height: 100vh;
+    padding: 2em 1em 2em;
+    background-color: rgb(150, 180, 106, .5);
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+h2
+.name{
+    float: Left;
+}
+
+.links{
+    float: right;
+}
+
+.brand{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bodyAbout{
+   background-color: green;
+}
+
+.info{
+    padding: 2em 1em 2em;
+    background-color: rgb(150, 180, 106, .5);
+    margin-left: 3em;
+    margin-right: 3em;
+}
