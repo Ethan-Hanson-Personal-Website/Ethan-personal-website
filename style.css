@@ -1,6 +1,63 @@
-html{
+html {
     background: green;
+    font-size: 16px;
 }
+
+/* Add a CSS class for the fixed header */
+.fixed-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: .5em 1em;
+    box-shadow: 0 2px 6px 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-size: 16px;
+    padding-top: 100px; /* Add space for the fixed header */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .fixed-header {
+        padding: 0.5em 1em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+
+    .fixed-header {
+        padding: 1em 3em;
+    }
+
+    main {
+        padding: 2em 3em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
 
 header{
     font-size: 2rem;
@@ -11,6 +68,9 @@ header{
     top: 0;
     padding: .5em 1em;
     box-shadow: 0 2px 6px 1px black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main{
@@ -20,6 +80,14 @@ main{
     margin-left: 3em;
     margin-right: 3em;
 }
+
+.mainBody{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* Change the color to your preferred text color */
+    font-size: 2.5em; /* Adjust the font size as needed */
+    margin-top: 20px;
+}
+
 
 h2
 .name{
@@ -43,4 +111,28 @@ h2
     background-color: rgb(150, 180, 106, .5);
     margin-left: 3em;
     margin-right: 3em;
+}
+
+a:hover{
+    color: red;
+}
+
+article {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; 
+}
+
+
+.success-message {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px; /
+}
+
+
+.success-message h2, .success-message p {
+    text-align: center;
 }
