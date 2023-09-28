@@ -1,46 +1,159 @@
-html{
+/* Global Styles */
+html {
     background: green;
+    font-size: 16px;
 }
 
-header{
-    font-size: 2rem;
-    background-color: white;
+body {
+    font-size: 16px;
+    padding-top: 100px;
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* Add space for the fixed header */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Fixed Header Styles */
+.fixed-header {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     padding: .5em 1em;
     box-shadow: 0 2px 6px 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Background color added for fixed header */
 }
 
-main{
+/* Main Content Styles */
+main {
     min-height: 100vh;
     padding: 2em 1em 2em;
-    background-color: rgb(150, 180, 106, .5);
+    background-color: rgba(150, 180, 106, .5);
     margin-left: 3em;
     margin-right: 3em;
 }
 
-h2
-.name{
-    float: left;
-}
-
-.links{
-    float: right;
-}
-
-.brand{
+/* Main Body Styles */
+.mainBody {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-size: 2.5em;
+    margin-top: 20px;
 }
 
-.bodyAbout{
-   background-color: green;
+/* Header and Navigation Styles */
+header {
+    font-size: 2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: .5em 1em;
+    box-shadow: 0 2px 6px 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.info{
+/* Links Styles */
+.links {
+    float: right; /* Floating removed, not used */
+}
+
+/* About Section Styles */
+.bodyAbout {
+    background-color: green;
+}
+
+/* Info Section Styles */
+.info {
     padding: 2em 1em 2em;
     background-color: rgb(150, 180, 106, .5);
     margin-left: 3em;
     margin-right: 3em;
+}
+
+/* Hover Effect on Links */
+a:hover {
+    color: red;
+}
+
+/* Success Message Styles */
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px; /* Remove the extra slash at the end */
+}
+
+/* Brand Styles */
+.brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+/* Headings Styles */
+.head {
+    font-size: 20px;
+    text-indent: 1vw;
+}
+
+/* List Item Styles */
+p,
+li {
+    font-family: 'Cormorant Garamond';
+    margin-left: 20px;
+    text-indent: -1px;
+}
+
+/* Stuff Section Styles */
+.stuff {
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 55px;
+    width: 75%;
+    height: 1000px;
+    background-color: rgba(242, 242, 242, 0.78);
+}
+
+/* Div Styles */
+div {
+    border-radius: 5px; /* Specific div selector added */
+}
+
+/* Max Width Styles */
+* {
+    max-width: 100vw;
+    margin: auto;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Message Box Width Adjustment */
+.contact-form .form-group:nth-child(3) textarea {
+    width: calc(100% - 10px); /* Adjust as needed */
 }
