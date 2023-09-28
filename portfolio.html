@@ -1,27 +1,86 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Ethan's Portfolio</title>
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <script src="javascript.js"></script>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
-        </head>
-        <body class="bodyAbout">
-            <header class="container fixed-header">
-                <span class="name">Ethan Hanson</span>
-                <nav class="links">
-                    <a href='/index.html'>HOME</a>
-                    <a href='/about.html'>ABOUT</a>
-                    <a class='active' href='/portfolio.html'>PORTFOLIO</a>
-                </nav>
-            </header>
+<html lang="en">
 
-            <main>
-                <h1>coming soon</h1>
-            </main>
-                
-        </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body class="bodyAbout">
+    <header class="fixed-header">
+        <span class="name">Ethan Hanson</span>
+        <nav class="links">
+            <a href='/index.html'>HOME</a>
+            <a href='/about.html'>ABOUT</a>
+            <a class='active' href='/portfolio.html'>PORTFOLIO</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="stuff">
+            <br><br>
+            <h1>Ethan Hanson</h1>
+            <hr />
+            <p class="head">Experience</p>
+            <hr />
+            <ul>
+                <li>Zone Lead, Amazon Fresh | February 2022 - Present</li>
+                <li>Retail Employee, Target | October 2020 - February 2022</li>
+                <li>Lead Robotics Instructor, Gears2Robots | August 2015 - October 2020</li>
+
+            </ul>
+            <hr />
+            <p class="head">Education</p>
+            <hr />
+            <ul>
+                <li>Paloma Valley High School | August 2011 - June 2015</li>
+                <li>FullStack Univerity | October 2023 - Present</li>
+            </ul>
+            <hr />
+            <p class="head">Skills</p>
+            <hr />
+            <ul>
+                <li>Web Design with HTML & CSS</li>
+                <li>Customer Service and Communication</li>
+                <li>Leadership and Teamwork</li>
+                <li>Inventory Management</li>
+                <li>Flexibility and Adaptability</li>
+                <li>Education and Training</li>
+                <li>Negotiation and Funding Acquisition</li>
+            </ul>
+        </div>
+
+
+    </main>
+
+    
+    <!-- Footer with Contact Form -->
+    <<footer class="container">
+        <h1 class="brand">Contact Me</h1>
+        <form action="success.html">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
